@@ -18,16 +18,15 @@ public class Main {
     }
 
     private static void gameMethod(int randomNumber, int userNumber) {
-        while (userNumber < 100 && userNumber > 1){
+        while (true){
+            if (userNumber < 100 && userNumber > 1)
             System.out.print("Please Enter a Number Between 1 and 100:");
                 break;}
 
-        if (userNumber == randomNumber);
-        {
+            else if (userNumber == randomNumber);{
                 System.out.print("Well Done, You Have Correctly Guessed the Number!");
         }
-        if (userNumber > randomNumber && userNumber < randomNumber) ;
-        {
+            else (userNumber > randomNumber && userNumber < randomNumber) ;{
                 System.out.print("You Have Not Correctly Guessed The Number, Please Try Again!");
         }
     }
